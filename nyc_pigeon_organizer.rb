@@ -15,9 +15,6 @@ def nyc_pigeon_organizer(data)
       memo = new_memo
       new_memo
     end
-  #p memo["Theo"].class
-  #p memo.class
-  pp result
   end
   pp result
 end
