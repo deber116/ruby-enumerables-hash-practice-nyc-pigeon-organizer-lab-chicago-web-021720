@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
   #p memo.class
   result = memo
   end
-  p result
+  pp result
 end
 
 #need a hash of pigeons by reduce 
