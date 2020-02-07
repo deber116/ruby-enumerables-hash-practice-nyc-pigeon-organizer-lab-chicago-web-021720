@@ -4,20 +4,20 @@ def nyc_pigeon_organizer(data)
   new_data = data.reduce({}) do |memo, (category,characteristic_array)|
     characteristic_array.reduce({})  do |new_memo, (characteristic,birdname_array)|
       birdname_array.each do |name|
-        if !new_memo[name]
-          new_memo[name] = {}
+        if !result[name]
+          result[name] = {}
         end
-        if !new_memo[name][category]
-          new_memo[name][category] = []
+        if !result[name][category]
+          result[name][category] = []
         end
-        new_memo[name][category] << characteristic.to_s
+        result[name][category] << characteristic.to_s
       end
       memo = new_memo
       new_memo
     end
   #p memo["Theo"].class
   #p memo.class
-  result = memo
+  result
   end
   pp result
 end
