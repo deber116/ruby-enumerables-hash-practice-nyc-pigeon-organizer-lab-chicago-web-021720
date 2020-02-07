@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
       new_memo
     end
   end
-  pp result
+  result
 end
 
 #need a hash of pigeons by reduce 
